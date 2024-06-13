@@ -37,6 +37,7 @@ export class ViewMemory extends Observer
         for (let i = 0; i < 25; i++){
         let element = document.createElement("button");
         element.classList.add("card");
+        element.id = "btn" + i ;
         element.innerHTML = this.#motsSelects[i];
         document.querySelector(".cards").append(element);
         }

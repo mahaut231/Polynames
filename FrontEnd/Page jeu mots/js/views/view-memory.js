@@ -43,21 +43,22 @@ export class ViewMemory extends Observer
         elementR.classList.add("cardRed");
         elementR.innerHTML = this.#motsSelects[0];
         document.querySelector(".cards").append(elementR);
-        let elementV1 = document.createElement("button");
-        elementV1.classList.add("cardGreen");
-        elementV1.innerHTML = this.#motsSelects[1];;
-        document.querySelector(".cards").append(elementV1);
-        for (let i = 2; i < 24; i++){
+        for (let i = 1; i < 25; i++){
         let element = document.createElement("button");
         element.classList.add("card");
         element.innerHTML = this.#motsSelects[i];
         document.querySelector(".cards").append(element);
+        element.id = "btn" + i ;
         }
-        let elementV2 = document.createElement("button");
-        elementV2.classList.add("cardGreen");
-        elementV2.innerHTML = this.#motsSelects[24];;
-        document.querySelector(".cards").append(elementV2);
-        return this.#motsSelects;
+        document.getElementById("btn2").classList.replace("card", "cardGreen");
+        document.getElementById("btn8").classList.replace("card", "cardGreen");
+        document.getElementById("btn21").classList.replace("card", "cardGreen");
+        document.getElementById("btn14").classList.replace("card", "cardGreen");
+        document.getElementById("btn15").classList.replace("card", "cardGreen");
+        document.getElementById("btn17").classList.replace("card", "cardGreen");
+        document.getElementById("btn24").classList.replace("card", "cardGreen");
+        document.getElementById("btn5").classList.replace("card", "cardGreen");
+
     }
 
    
