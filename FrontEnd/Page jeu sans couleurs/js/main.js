@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const btn8 = document.getElementById("btn8");
     const btn21 = document.getElementById("btn21");
     const btn14 = document.getElementById("btn14");
-    const btn15 =  document.getElementById("btn15");
+    const btn15 = document.getElementById("btn15");
     const btn17 = document.getElementById("btn17");
     const btn24 = document.getElementById("btn24");
     const btn5 = document.getElementById("btn5");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(){
     if (btn2){
         btn2.addEventListener("click", function(){
             console.log("btn2 clicked");
-            btn1.classList.replace("card", "cardGreen")
+            btn2.classList.replace("card", "cardGreen")
         });
     };
     if (btn8){
