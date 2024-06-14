@@ -1,0 +1,26 @@
+CREATE DATABASE PolyNamesGR;
+USE PolyNamesGR;
+
+CREATE TABLE `board` (`boardId` INT NOT NULL AUTO_INCREMENT,`boardScore` INT,`boardActiveTeam` INT,PRIMARY KEY(`boardId`));
+CREATE TABLE `card` (`cardId` INT NOT NULL AUTO_INCREMENT, `cardWord` VARCHAR(30), `cardState` TINYINT NOT NULL DEFAULT 0, `cardColor` INT NULL,  PRIMARY KEY(`cardId`));
+CREATE TABLE `team` (`teamId` INT NOT NULL AUTO_INCREMENT,`player1` INT,`player2` INT, PRIMARY KEY(`teamId`));
+CREATE TABLE `player` (`playerId` INT NOT NULL AUTO_INCREMENT, `playerName` VARCHAR(30) NOT NULL, PRIMARY KEY(`playerId`));
+CREATE TABLE `game` (`gameId` INT NOT NULL AUTO_INCREMENT, `gameActiveBoard` INT, `gameOver` TINYINT NOT NULL DEFAULT 0, PRIMARY KEY(`gameId`));
+
+
+
+
+INSERT INTO `card` (`cardWord`) VALUES 
+	("hypnotiser"), ("bosse"), ("gondole"), ("rigide"), ("logique"),
+	("population"), ("treuil"), ("eau"), ("concert"), ("compagnon"),
+	("veste"), ("fichier"), ("internet"), ("somnambule"), ("livre"),
+	("poussin"), ("vagabond"), ("sentiment"), ("flamme"), ("ronronner"),
+	("thermostat"), ("trou"), ("superstition"), ("restaurant"), ("monnaie"),
+	("perle"), ("graines"), ("dur"), ("sofa"), ("escorte"),
+	("adam"), ("matin"), ("pelouse"), ("bajoue"), ("allemagne"),
+	("gribouiller"), ("baignoire"), ("totem"), ("actes"), ("soutien"),
+	("sable"), ("immortelle"), ("cauchemar"), ("vieille"), ("sujet"),
+	("nervure"), ("réservoir"), ("lavande"), ("photocopie"), ("hortensia");
+
+
+
